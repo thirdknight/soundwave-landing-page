@@ -1,3 +1,4 @@
+// Landing Page/ One Page
 
 - Create index.html or index.php for index.php we need create Folder include/a_config.php
 
