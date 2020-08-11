@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
 * {
   box-sizing: border-box; }
   *::before, *::after {
@@ -8,7 +8,8 @@ body {
   padding: 0;
   margin: 0;
   background-color: #2F303A;
-  font-family: 'Poppins', sans-serif;
+  font-family: Poppins, sans-serif;
+  font-size: 1.2rem;
   color: white;
   min-height: 100vh; }
 
@@ -37,7 +38,7 @@ body {
   text-decoration: none;
   padding: 1rem; }
 
-.main-nav a:hover {
+.main-nav a:hover, .footer-nav a:hover {
   color: #adadad; }
 
 .main-header, .main-footer {
@@ -50,7 +51,8 @@ body {
 
 .main-footer {
   height: 70px;
-  background-color: #202027; }
+  background-color: #202027;
+  font-weight: bold; }
 
 .social-link img {
   width: 1em;
@@ -139,13 +141,14 @@ body {
   width: 25vw;
   height: 25vw;
   border-radius: 50%;
-  background-color: rgba(23, 98, 167, 0.1);
+  background-color: rgba(52, 87, 178, 0.1);
   top: 15vh;
   left: 30vw;
   z-index: -1; }
 
 .home-page-circle-3 {
   position: absolute;
+  overflow: hidden;
   width: 45vw;
   height: 45vw;
   bottom: 0;
@@ -153,13 +156,12 @@ body {
   z-index: -1; }
   .home-page-circle-3::before {
     content: '';
-    position: absolute;
-    overflow: hidden;
     transform: translate(40%, 40%);
+    position: absolute;
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    background-color: rgba(23, 98, 167, 0.1); }
+    background-color: rgba(52, 87, 178, 0.1); }
 
 .discover-main-section {
   display: flex;
@@ -176,7 +178,6 @@ body {
   display: flex; }
 
 .icon {
-  display: flex;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -225,12 +226,14 @@ body {
   display: flex;
   flex-direction: column; }
   .input-group:last-child {
+    margin-bottom: 0; }
+  .input-group label {
     font-weight: bold;
     margin-bottom: .5rem; }
   .input-group input {
     outline: none;
     background: none;
-    border: 1px solid #3E3852;
+    border: 1px solid #2E3852;
     font-size: 1em;
     padding: .5em;
     color: inherit;
@@ -249,6 +252,7 @@ body {
 
 .join-page-circle-1 {
   position: absolute;
+  overflow: hidden;
   width: 35vw;
   height: 35vw;
   bottom: 0;
@@ -256,8 +260,8 @@ body {
   z-index: -1; }
   .join-page-circle-1::before {
     content: '';
-    position: absolute;
     transform: translateX(-20%);
+    position: absolute;
     height: 100%;
     width: 100%;
     border-radius: 50%;
@@ -273,9 +277,9 @@ body {
   z-index: -1; }
   .join-page-circle-2::before {
     content: '';
-    position: absolute;
     transform: translateY(-30%);
+    position: absolute;
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    background-color: rgba(23, 98, 167, 0.1); }
+    background-color: rgba(52, 87, 178, 0.1); }

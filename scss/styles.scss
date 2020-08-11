@@ -1,5 +1,5 @@
-//Styles
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+// Styles
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
 * {
   box-sizing: border-box;
@@ -13,7 +13,8 @@ body {
   padding: 0;
   margin: 0;
   background-color: #2F303A;
-  font-family: 'Poppins', sans-serif;
+  font-family: Poppins, sans-serif;
+  font-size: 1.2rem;
   color: white;
   min-height: 100vh;
 }
@@ -48,7 +49,7 @@ body {
   padding: 1rem;
 }
 
-.main-nav a:hover {
+.main-nav a:hover, .footer-nav a:hover {
   color: #adadad;
 }
 
@@ -65,6 +66,7 @@ body {
 .main-footer {
   height: 70px;
   background-color: #202027;
+  font-weight: bold;
 }
 
 .social-link img {
@@ -117,7 +119,7 @@ body {
   }
 }
 
-//index
+// index.css
 .home-main-section {
   display: flex;
   align-items: stretch;
@@ -177,7 +179,7 @@ body {
   width: 25vw;
   height: 25vw;
   border-radius: 50%;
-  background-color: rgba(23, 98, 167, 0.1);
+  background-color: rgba(52, 87, 178, 0.1);
   top: 15vh;
   left: 30vw;
   z-index: -1;
@@ -185,6 +187,7 @@ body {
 
 .home-page-circle-3 {
   position: absolute;
+  overflow: hidden;
   width: 45vw;
   height: 45vw;
   bottom: 0;
@@ -193,17 +196,16 @@ body {
 
   &::before {
     content: '';
-    position: absolute;
-    overflow: hidden;
     transform: translate(40%, 40%);
+    position: absolute;
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    background-color: rgba(23, 98, 167, 0.1);
+    background-color: rgba(52, 87, 178, 0.1);
   }
 }
 
-// Discover 
+//discover
 .discover-main-section {
   display: flex;
   align-items: center;
@@ -223,7 +225,6 @@ body {
 }
 
 .icon {
-  display: flex;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -253,8 +254,7 @@ body {
   }
 }
 
-// Join
-
+// join
 .join-main-section {
   display: flex;
   justify-content: space-between;
@@ -286,6 +286,10 @@ body {
   flex-direction: column;
 
   &:last-child {
+    margin-bottom: 0;
+  }
+
+  label {
     font-weight: bold;
     margin-bottom: .5rem;
   }
@@ -293,7 +297,7 @@ body {
   input {
     outline: none;
     background: none;
-    border: 1px solid #3E3852;
+    border: 1px solid #2E3852;
     font-size: 1em;
     padding: .5em;
     color: inherit;
@@ -320,6 +324,7 @@ body {
 
 .join-page-circle-1 {
   position: absolute;
+  overflow: hidden;
   width: 35vw;
   height: 35vw;
   bottom: 0;
@@ -328,8 +333,8 @@ body {
 
   &::before {
     content: '';
-    position: absolute;
     transform: translateX(-20%);
+    position: absolute;
     height: 100%;
     width: 100%;
     border-radius: 50%;
@@ -348,11 +353,11 @@ body {
 
   &::before {
     content: '';
-    position: absolute;
     transform: translateY(-30%);
+    position: absolute;
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    background-color: rgba(23, 98, 167, 0.1);
+    background-color: rgba(52, 87, 178, 0.1);
   }
 }
