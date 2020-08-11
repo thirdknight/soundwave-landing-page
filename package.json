@@ -1,0 +1,23 @@
+{
+  "name": "spotify-landing-page-redesign-edinson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thirdknight/spotify-landing-page-redesign-edinson.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thirdknight/spotify-landing-page-redesign-edinson/issues"
+  },
+  "homepage": "https://github.com/thirdknight/spotify-landing-page-redesign-edinson#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}
