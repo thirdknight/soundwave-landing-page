@@ -1,3 +1,19 @@
+/* Base colors */
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+body {
+  font-family: Poppins, sans-serif; }
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
 html {
   scroll-behavior: smooth; }
+
+body {
+  background-color: #2F303A;
+  font-size: 16px;
+  line-height: 1.4; }

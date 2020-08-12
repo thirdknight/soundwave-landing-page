@@ -1,9 +1,10 @@
-// Styles
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+@import "base/variables";
+@import "base/typo";
+@import "components/base";
+@import "components/buttons";
 
-html {
-  scroll-behavior: smooth;
-}
+
+// Styles
 // * {
 //   box-sizing: border-box;
 
