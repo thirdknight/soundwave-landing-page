@@ -3,6 +3,11 @@
 body {
   font-family: Poppins, sans-serif; }
 
+* {
+  box-sizing: border-box; }
+  *::before, *::after {
+    box-sizing: border-box; }
+
 html,
 body {
   height: 100%;
@@ -17,3 +22,19 @@ body {
   background-color: #2F303A;
   font-size: 16px;
   line-height: 1.4; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  flex-grow: 1;
+  background-color: pink; }
+
+.main-header {
+  background-color: green;
+  display: flex;
+  justify-content: space-between;
+  align-self: center; }
+  .main-header .container {
+    display: flex;
+    justify-content: space-between; }

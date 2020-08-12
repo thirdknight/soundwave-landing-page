@@ -1,3 +1,10 @@
+* {
+  box-sizing: border-box;
+
+  &::before, &::after {
+    box-sizing: border-box;
+  }
+}
 html,
 body {
   height: 100%;
@@ -13,3 +20,45 @@ body {
   font-size: $base-font-size;
   line-height: $base-line-height;
 }
+
+
+// .main-header,
+// .main-footer {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  flex-grow: 1;
+  background-color: pink;
+}
+.main-header {
+  background-color: green;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+// .main-header, .main-footer {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// }
+
+// .main-header {
+//   height: 140px;
+// }
+
+// .main-footer {
+//   height: 70px;
+//   background-color: #202027;
+//   font-weight: bold;
+// }

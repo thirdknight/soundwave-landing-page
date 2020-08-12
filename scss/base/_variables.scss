@@ -3,5 +3,11 @@ $white: #FFFFFF;
 $black: #000000;
 $lighterblack: #2F303A;
 
+// https://dev.to/adrianbdesigns/mastering-css-vertical-rhythm-om9
 $base-font-size: 16px;
 $base-line-height: 1.4; // Default value is 1.2
+
+$rhythm: ($base-font-size * $base-line-height);
+$dist-s: $rhythm * 0.5;
+$dist-m: $rhythm * 1.25;
+$dist-l: $rhythm * 2.5;
