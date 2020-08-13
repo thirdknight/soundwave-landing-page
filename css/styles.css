@@ -28,13 +28,17 @@ body {
   margin: 0 auto;
   padding: 0 40px;
   flex-grow: 1;
-  background-color: pink; }
-
-.main-header {
-  background-color: green;
   display: flex;
-  justify-content: space-between;
-  align-self: center; }
-  .main-header .container {
-    display: flex;
-    justify-content: space-between; }
+  flex-direction: column; }
+  @media screen and (min-width: 768px) {
+    .container {
+      flex-direction: row;
+      justify-content: space-between; } }
+
+.main-header,
+.main-footer {
+  background-color: green; }
+
+.main-header .container {
+  flex-direction: row;
+  justify-content: space-between; }
