@@ -17,8 +17,20 @@ html {
 }
 body {
   background-color: $lighterblack;
-  font-size: $base-font-size;
+  font-size: $font-size-lp;
   line-height: $base-line-height;
+  color : $white;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $white;  
 }
 
 .container {
@@ -32,23 +44,63 @@ body {
     flex-direction: row;
     justify-content: space-between;
   }
-
 }
 
 .main-header,
 .main-footer {
-  background-color: green;
+  display: flex;
+  align-items: center;
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
-.main {
-
+.main-footer {
+  .container {
+    @media screen and(min-width: 768px) {
+      flex-direction: row;
+    }
+  }
 }
+
 .main-header {
- .container {
-   flex-direction: row;
-   justify-content: space-between;
- }
+  height: 140px;
 }
 .main-footer {
-  
+  height: 90px;
+  background-color: $footer-bc;
+}
+
+.main-nav,
+.footer-nav {
+  a {
+    padding: 1rem;
+  }
+}
+.main-nav {
+  ul {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.footer-nav {
+  ul {
+    display: flex;
+    flex-direction: column;
+    @media screen and(min-width: 768px){
+      flex-direction: row;  
+    }
+  }
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+}
+.brand-logo-name {
+  margin-left: 1rem;
+  font-size: 1.25em;
 }

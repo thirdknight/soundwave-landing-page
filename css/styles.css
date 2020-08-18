@@ -20,8 +20,18 @@ html {
 
 body {
   background-color: #2F303A;
-  font-size: 16px;
-  line-height: 1.4; }
+  font-size: 18px;
+  line-height: 1.4;
+  color: #FFFFFF; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: #FFFFFF; }
 
 .container {
   max-width: 1200px;
@@ -37,8 +47,44 @@ body {
 
 .main-header,
 .main-footer {
-  background-color: green; }
+  display: flex;
+  align-items: center; }
+  .main-header .container,
+  .main-footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
 
-.main-header .container {
-  flex-direction: row;
-  justify-content: space-between; }
+@media screen and (min-width: 768px) {
+  .main-footer .container {
+    flex-direction: row; } }
+
+.main-header {
+  height: 140px; }
+
+.main-footer {
+  height: 90px;
+  background-color: #202027; }
+
+.main-nav a,
+.footer-nav a {
+  padding: 1rem; }
+
+.main-nav ul {
+  display: flex;
+  flex-direction: row; }
+
+.footer-nav ul {
+  display: flex;
+  flex-direction: column; }
+  @media screen and (min-width: 768px) {
+    .footer-nav ul {
+      flex-direction: row; } }
+
+.brand-logo {
+  display: flex;
+  align-items: center; }
+
+.brand-logo-name {
+  margin-left: 1rem;
+  font-size: 1.25em; }

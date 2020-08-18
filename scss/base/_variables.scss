@@ -2,9 +2,12 @@
 $white: #FFFFFF;
 $black: #000000;
 $lighterblack: #2F303A;
+$regularblack: #202027;
+$footer-bc: $regularblack;
 
 // https://dev.to/adrianbdesigns/mastering-css-vertical-rhythm-om9
 $base-font-size: 16px;
+$font-size-lp: 18px; // font-size landingpage
 $base-line-height: 1.4; // Default value is 1.2
 
 $rhythm: ($base-font-size * $base-line-height);
