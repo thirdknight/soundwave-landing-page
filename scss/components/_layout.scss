@@ -97,3 +97,29 @@
     flex-direction: row;
   }
 }
+
+.discover-main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  .covers-image {
+    margin-top: 2rem;
+    height: 30vh;
+    width: auto;
+  }
+  .icon-section {
+    display: flex;
+    .icon {
+      img {
+        width: 40px;
+      }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    .covers-image {
+      margin-left: 2rem;
+    }
+  }
+}

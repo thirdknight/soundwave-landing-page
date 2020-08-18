@@ -59,3 +59,15 @@ a {
    font-size: 1.2em;
    margin-bottom: 2rem;
  }
+.icon{
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: .5rem;
+    padding: .75rem;
+    width: 100px;
+    height: 100px;
+    background-color: $regularblack;
+    margin-bottom: 2rem;
+}
