@@ -71,3 +71,21 @@ a {
     background-color: $regularblack;
     margin-bottom: 2rem;
 }
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  label {
+    font-weight: bold;
+    margin-bottom: .5rem;
+  }
+  input {
+    outline: none;
+    background: none;
+    border: 1px solid $darkblue;
+    font-size: 1em;
+    padding: .5em;
+    color: inherit;
+    border-radius: 5px;
+  }
+}
