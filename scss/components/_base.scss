@@ -1,4 +1,6 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 
   &::before, &::after {
@@ -21,18 +23,23 @@ body {
   line-height: $base-line-height;
   color : $white;
 }
-
-ul {
+ul, nav {
   list-style: none;
+}
+ul {
   padding: 0;
   margin: 0;
 }
 
 a {
   text-decoration: none;
-  color: $white;  
+  cursor: pointer;
+  color: inherit;  
 }
 
+.section {
+  margin-bottom: 56px;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -40,67 +47,15 @@ a {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  @media screen and(min-width: 768px) {
-    flex-direction: row;
-    justify-content: space-between;
-  }
 }
-
-.main-header,
-.main-footer {
-  display: flex;
-  align-items: center;
-  .container {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
+.title {
+  font-weight: 500;
+  font-size: 3em;
+  margin-bottom: 1rem;
+  margin-top: 0;
 }
-
-.main-footer {
-  .container {
-    @media screen and(min-width: 768px) {
-      flex-direction: row;
-    }
-  }
-}
-
-.main-header {
-  height: 140px;
-}
-.main-footer {
-  height: 90px;
-  background-color: $footer-bc;
-}
-
-.main-nav,
-.footer-nav {
-  a {
-    padding: 1rem;
-  }
-}
-.main-nav {
-  ul {
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-.footer-nav {
-  ul {
-    display: flex;
-    flex-direction: column;
-    @media screen and(min-width: 768px){
-      flex-direction: row;  
-    }
-  }
-}
-
-.brand-logo {
-  display: flex;
-  align-items: center;
-}
-.brand-logo-name {
-  margin-left: 1rem;
-  font-size: 1.25em;
-}
+ .subtitle {
+   font-weight: 500;
+   font-size: 1.2em;
+   margin-bottom: 2rem;
+ }

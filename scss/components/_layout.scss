@@ -1,0 +1,99 @@
+.main-header,
+.main-footer {
+  display: flex;
+  align-items: center;
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.main-footer {
+  .container {
+    @media screen and(min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+}
+
+.main-header {
+  height: 140px;
+}
+.main-footer {
+  height: 90px;
+  background-color: $footer-bc;
+}
+.main {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.main-nav,
+.footer-nav {
+  a {
+    padding: 1rem;
+  }
+}
+.main-nav {
+  ul {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.footer-nav {
+  ul {
+    display: flex;
+    flex-direction: column;
+    @media screen and(min-width: 768px){
+      flex-direction: row;  
+    }
+  }
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+}
+.brand-logo-name {
+  margin-left: 1rem;
+  font-size: 1.25em;
+}
+
+.home-main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-grow: 1;
+  flex-direction: column;
+  .img-wrapper {
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+  }
+  .lady-image {
+    height: 350px;
+    background-image: url(../images/landing-page-girl.png);
+    flex-grow: 1;
+    max-height: 70vh;
+    min-width: 30vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+  }
+  .call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 1rem;
+    align-self: flex-start;
+  }
+  @media screen and(min-width: 768px) {
+    flex-direction: row;
+  }
+}
