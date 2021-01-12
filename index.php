@@ -70,18 +70,18 @@
             Join the
             <span class="accent-text">fun.</span>
           </h1>
-          <form class="join-form">
+          <form action="process.php" method="post" class="join-form">
             <div class="input-group">
-              <label>Name:</label>
-              <input type="text">
+              <!-- <label>Name:</label> -->
+              <input type="text" name="UName" placeholder="User">
             </div>
             <div class="input-group">
-              <label>Email:</label>
-              <input type="email">
+              <!-- <label>Email:</label> -->
+              <input type="email" name="Email" placeholder="Email">
             </div>
             <div class="input-group">
-              <label>Password:</label>
-              <input type="password">
+              <!-- <label>Password:</label> -->
+              <input type="password" name="password" placeholder="Password">
             </div>
             <div class="input-group">
               <button type="submit" class="btn">Join Now</button>
@@ -101,13 +101,13 @@
         <nav class="footer-nav">
           <ul>
             <li>
-              <a href="#" class="social-link">
+              <a href="https://twitter.com/?lang=de" target="_blank" class="social-link">
                 <img src="images/twitter.svg">
                 Twitter
               </a>
             </li>
             <li>
-              <a href="#" class="social-link">
+              <a href="https://www.facebook.com/" target="_blank" class="social-link">
                 <img src="images/facebook.svg">
                 Facebook
               </a>
