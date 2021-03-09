@@ -1,6 +1,6 @@
 {
-  "name": "spotify-landing-page-redesign-edinson",
-  "version": "1.0.0",
+  "name": "soundwave-landing-page",
+  "version": "1.1.0",
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
@@ -21,6 +21,6 @@
     "gulp-sass": "^4.1.0"
   },
   "dependencies": {
-    "browser-sync": "^2.26.12"
+    "browser-sync": "^2.26.14"
   }
 }
