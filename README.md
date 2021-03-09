@@ -2,7 +2,7 @@ Landing Page
 
 - Create index.html or index.php for index.php we need create Folder include/a_config.php
 
-- Create scss/styles.scss and css/styles.css Folders
+- Create scss/styles.scss and css/styles.css Folders.
 
 - Check in the Terminal: 
   gulpv4-sass-browsersync-edi
